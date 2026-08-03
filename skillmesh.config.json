@@ -1,0 +1,21 @@
+{
+  "source": {
+    "type": "bundled"
+  },
+  "destination": ".agents/skills",
+  "preset": "nextjs",
+  "skills": [
+    "architecture",
+    "frontend",
+    "testing",
+    "security",
+    "documentation"
+  ],
+  "overridesDirectory": ".skillmesh/overrides",
+  "projectContext": ".skillmesh/project-context.md",
+  "cacheDirectory": ".skillmesh/cache",
+  "conflictPolicy": "abort",
+  "integrity": {
+    "verifyHashes": true
+  }
+}

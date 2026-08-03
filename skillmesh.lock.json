@@ -1,0 +1,61 @@
+{
+  "lockfileVersion": 1,
+  "skillmeshVersion": "0.1.0",
+  "cliVersion": "0.1.0",
+  "source": {
+    "type": "bundled"
+  },
+  "preset": "nextjs",
+  "resolvedAt": "2026-08-03T23:38:01.955Z",
+  "skills": {
+    "architecture": {
+      "version": "1.0.0",
+      "destination": ".agents\\skills\\architecture",
+      "dependencies": [],
+      "files": {
+        "SKILL.md": "sha256:d6e7022dcbe63654be77798c35888bc8c5f0b930b715c3cb394256e390176e0a",
+        "manifest.json": "sha256:300a5564ffeb3570e91be164ad196f8757f937f1c39b28e88993c15d6f271549"
+      }
+    },
+    "frontend": {
+      "version": "1.0.0",
+      "destination": ".agents\\skills\\frontend",
+      "dependencies": [
+        "architecture"
+      ],
+      "files": {
+        "SKILL.md": "sha256:e0f8d2032adcc203e50470d21df54e58e84f9d3fa036c44f1a05e806e3e8b6ba",
+        "manifest.json": "sha256:59168776e9b25f95a0c31a69f2b72d34984bee655cd74a8268ee91cd2bc99635"
+      }
+    },
+    "testing": {
+      "version": "1.0.0",
+      "destination": ".agents\\skills\\testing",
+      "dependencies": [
+        "architecture"
+      ],
+      "files": {
+        "SKILL.md": "sha256:145642b43e3ce432efa9ca78bcb37e7d557d41c163f6791df9a19b8d4e744ef2",
+        "manifest.json": "sha256:a98b4c2d657a7af72a3e9145e6b62e8dad81f7ad951ee01bb3c9bf66b8398a2c"
+      }
+    },
+    "security": {
+      "version": "1.0.0",
+      "destination": ".agents\\skills\\security",
+      "dependencies": [],
+      "files": {
+        "SKILL.md": "sha256:3de484fcf7a840a77a3e94d31a993356ce654f6930809faf193016a8346e9261",
+        "manifest.json": "sha256:ede5554000b714d4e18aa971d05513e353bc609ef677b0a90a238bd657c18edb"
+      }
+    },
+    "documentation": {
+      "version": "1.0.0",
+      "destination": ".agents\\skills\\documentation",
+      "dependencies": [],
+      "files": {
+        "SKILL.md": "sha256:5afcb416a73fe6411626b796769068ffde810158aad0d8b964fdab6db82bd147",
+        "manifest.json": "sha256:a2ac461aa2c59e352033fdfe9e4dd7d348ed5455f07ba589b3691c860c8c50d2"
+      }
+    }
+  }
+}
