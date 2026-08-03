@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#17324D"/>
+      <stop offset="100%" stop-color="#356B86"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+
+  <!-- City skyline -->
+  <g fill="#0f2436" opacity="0.55">
+    <rect x="60" y="480" width="90" height="220"/>
+    <rect x="170" y="420" width="70" height="280"/>
+    <rect x="260" y="500" width="100" height="200"/>
+    <rect x="900" y="440" width="80" height="260"/>
+    <rect x="1000" y="500" width="70" height="200"/>
+    <rect x="1090" y="460" width="90" height="240"/>
+  </g>
+
+  <!-- Columns / institution -->
+  <g fill="#F5F1E8" opacity="0.9">
+    <rect x="430" y="560" width="340" height="24" rx="4"/>
+    <rect x="450" y="440" width="24" height="120"/>
+    <rect x="510" y="440" width="24" height="120"/>
+    <rect x="570" y="440" width="24" height="120"/>
+    <rect x="630" y="440" width="24" height="120"/>
+    <rect x="690" y="440" width="24" height="120"/>
+    <polygon points="430,440 600,360 770,440"/>
+    <rect x="410" y="584" width="380" height="18" rx="4"/>
+  </g>
+
+  <!-- Balanza de justicia -->
+  <g stroke="#B58A4A" stroke-width="10" fill="none" stroke-linecap="round">
+    <line x1="600" y1="150" x2="600" y2="330"/>
+    <line x1="470" y1="200" x2="730" y2="200"/>
+    <line x1="470" y1="200" x2="430" y2="290"/>
+    <line x1="470" y1="200" x2="510" y2="290"/>
+    <line x1="730" y1="200" x2="690" y2="290"/>
+    <line x1="730" y1="200" x2="770" y2="290"/>
+  </g>
+  <g fill="#B58A4A">
+    <circle cx="600" cy="150" r="12"/>
+    <path d="M430,290 A40,40 0 0,0 510,290 Z"/>
+    <path d="M690,290 A40,40 0 0,0 770,290 Z"/>
+    <rect x="560" y="330" width="80" height="16" rx="4"/>
+    <polygon points="600,346 560,400 640,400"/>
+  </g>
+
+  <text x="600" y="760" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#F5F1E8" opacity="0.85">Sociedad y Derecho</text>
+</svg>

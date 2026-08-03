@@ -1,0 +1,21 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.widget {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.widgetTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
