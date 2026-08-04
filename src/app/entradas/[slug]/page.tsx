@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import ImageFade from "@/components/ImageFade";
 import ReadingProgress from "@/components/ReadingProgress";
 import Sidebar from "@/components/Sidebar";
 import { getAllPosts, getAdjacentPosts, getPostBySlug } from "@/data/posts";
@@ -49,7 +49,7 @@ export default async function PostPage({
       <div className="layout">
         <article className={styles.article}>
           <div className={styles.imageWrap}>
-            <Image
+            <ImageFade
               src={post.image}
               alt={post.imageAlt}
               fill

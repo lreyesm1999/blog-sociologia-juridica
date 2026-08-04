@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Suspense } from "react";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageTransition from "@/components/PageTransition";
+import RouteProgress from "@/components/RouteProgress";
 
 export const metadata: Metadata = {
   title: {
@@ -31,12 +34,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Script id="theme-init" strategy="beforeInteractive">
           {themeInitScript}
         </Script>
+        <Suspense fallback={null}>
+          <RouteProgress />
+        </Suspense>
         <a href="#main-content" className="skip-link">
           Saltar al contenido principal
         </a>
         <Header />
         <main id="main-content" style={{ flex: 1 }}>
-          {children}
+          <PageTransition>{children}</PageTransition>
         </main>
         <Footer />
       </body>

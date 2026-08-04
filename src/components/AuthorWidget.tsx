@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import ImageFade from "@/components/ImageFade";
 import { author } from "@/data/author";
 import styles from "./AuthorWidget.module.css";
 import widgetStyles from "./Sidebar.module.css";
@@ -10,7 +10,7 @@ export default function AuthorWidget() {
       <p className={widgetStyles.widgetTitle}>Autor</p>
       <div className={styles.wrap}>
         <div className={styles.avatar}>
-          <Image
+          <ImageFade
             src={author.avatar}
             alt={`Fotografía de ${author.name}`}
             fill

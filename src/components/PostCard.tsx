@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import ImageFade from "@/components/ImageFade";
 import { BlogPost } from "@/types/post";
 import { formatDate } from "@/utils/formatDate";
 import { slugifyTag } from "@/utils/getPostsByTag";
@@ -9,7 +9,7 @@ export default function PostCard({ post }: { post: BlogPost }) {
   return (
     <article className={`card ${styles.card}`}>
       <div className={styles.imageWrap}>
-        <Image
+        <ImageFade
           src={post.image}
           alt={post.imageAlt}
           fill

@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import ImageFade from "@/components/ImageFade";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
@@ -26,7 +26,7 @@ export default function Hero() {
         </div>
         <div className={styles.art}>
           <div className={styles.artInner}>
-            <Image
+            <ImageFade
               src="/images/portada-blog.png"
               alt="Ilustración de una balanza de justicia junto a una ciudad, representando la relación entre el derecho y la sociedad"
               fill

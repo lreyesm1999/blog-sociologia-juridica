@@ -1,0 +1,160 @@
+.block {
+  position: relative;
+  overflow: hidden;
+  background: var(--border);
+  border-radius: 6px;
+}
+
+.block::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.35) 50%,
+    transparent 70%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Page header */
+.titleBar {
+  width: min(360px, 60%);
+  height: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.introBar {
+  width: min(520px, 80%);
+  height: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Card grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.75rem;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.cardImage {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 0;
+}
+
+.cardBody {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.tagPill {
+  width: 90px;
+  height: 1.4rem;
+  border-radius: 999px;
+}
+
+.line {
+  height: 0.9rem;
+  width: 100%;
+}
+
+.lineShort {
+  height: 0.9rem;
+  width: 70%;
+}
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.widget {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.widgetTitle {
+  width: 100px;
+  height: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  margin: 0 auto 0.9rem;
+}
+
+/* Post detail */
+.article {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.heroImage {
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  border-radius: 0;
+}
+
+.articleBody {
+  padding: 2rem;
+}
+
+.tagRow {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.detailTitle {
+  width: min(480px, 90%);
+  height: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.metaRow {
+  width: min(360px, 70%);
+  height: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .block::after {
+    animation: none;
+  }
+}

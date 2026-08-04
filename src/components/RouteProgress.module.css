@@ -1,0 +1,41 @@
+.track {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 70;
+  pointer-events: none;
+}
+
+.bar {
+  height: 100%;
+  width: 0%;
+  opacity: 0;
+  background: linear-gradient(90deg, var(--accent), var(--secondary));
+  box-shadow: 0 0 8px rgba(181, 138, 74, 0.6);
+}
+
+.bar.loading {
+  width: 78%;
+  opacity: 1;
+  transition: width 4s cubic-bezier(0.15, 0.8, 0.3, 1), opacity 0.15s ease;
+}
+
+.bar.done {
+  width: 100%;
+  opacity: 1;
+  transition: width 0.2s ease-out;
+}
+
+.bar.idle {
+  width: 0%;
+  opacity: 0;
+  transition: opacity 0.25s ease, width 0s linear 0.25s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    display: none;
+  }
+}

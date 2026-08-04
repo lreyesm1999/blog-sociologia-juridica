@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import ImageFade from "@/components/ImageFade";
 import { author } from "@/data/author";
 import { getAllPosts } from "@/data/posts";
 import styles from "./page.module.css";
@@ -20,7 +20,7 @@ export default function AutorPage() {
 
       <div className={styles.header}>
         <div className={styles.avatar}>
-          <Image
+          <ImageFade
             src={author.avatar}
             alt={`Fotografía de ${author.name}`}
             fill
