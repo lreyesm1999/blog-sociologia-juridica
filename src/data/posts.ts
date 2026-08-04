@@ -10,7 +10,7 @@ const rawPosts: Omit<BlogPost, "readingTime">[] = [
     publishedAt: "2026-08-01",
     author: "Lenier Reyes Morales",
     tags: ["Sociología jurídica", "Derecho", "Sociedad"],
-    image: "/images/sociologia-juridica.svg",
+    image: "/images/sociologia-juridica.png",
     imageAlt:
       "Libros de derecho y una balanza de justicia sobre un escritorio, representando el estudio de la sociología jurídica",
     featured: true,
@@ -46,7 +46,7 @@ const rawPosts: Omit<BlogPost, "readingTime">[] = [
     publishedAt: "2026-08-05",
     author: "Lenier Reyes Morales",
     tags: ["Sociedad", "Derecho", "Convivencia"],
-    image: "/images/sociedad-derecho.svg",
+    image: "/images/sociedad-derecho.png",
     imageAlt:
       "Personas caminando en una plaza urbana rodeada de edificios institucionales, representando la vida en sociedad",
     featured: true,
@@ -81,7 +81,7 @@ const rawPosts: Omit<BlogPost, "readingTime">[] = [
     publishedAt: "2026-08-10",
     author: "Lenier Reyes Morales",
     tags: ["Normas jurídicas", "Moral", "Cultura", "Costumbre"],
-    image: "/images/normas-sociales.svg",
+    image: "/images/normas-sociales.png",
     imageAlt:
       "Distintos símbolos representando la moral, la costumbre, la religión y el derecho como sistemas normativos",
     featured: false,
@@ -134,7 +134,7 @@ const rawPosts: Omit<BlogPost, "readingTime">[] = [
     publishedAt: "2026-08-15",
     author: "Lenier Reyes Morales",
     tags: ["Justicia", "Bien común", "Seguridad jurídica", "Instituciones"],
-    image: "/images/justicia.svg",
+    image: "/images/justicia.png",
     imageAlt: "Balanza de la justicia frente a un edificio de tribunales",
     featured: true,
     references: [
@@ -171,7 +171,7 @@ const rawPosts: Omit<BlogPost, "readingTime">[] = [
     publishedAt: "2026-08-20",
     author: "Lenier Reyes Morales",
     tags: ["Libertad", "Individuo", "Derechos", "Responsabilidad"],
-    image: "/images/libertad-individual.svg",
+    image: "/images/libertad-individual.png",
     imageAlt:
       "Una persona caminando libremente en un espacio abierto, representando la libertad individual dentro de la sociedad",
     featured: false,
@@ -209,7 +209,7 @@ const rawPosts: Omit<BlogPost, "readingTime">[] = [
     publishedAt: "2026-08-25",
     author: "Lenier Reyes Morales",
     tags: ["Transformación social", "Eficacia jurídica", "Ciudadanía", "Reflexión"],
-    image: "/images/transformacion-social.svg",
+    image: "/images/transformacion-social.png",
     imageAlt:
       "Un grupo de ciudadanos participando en una asamblea comunitaria, representando la participación ciudadana en la transformación social",
     featured: false,

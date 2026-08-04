@@ -69,13 +69,15 @@
 }
 
 .nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   gap: 1rem;
   margin-top: 2rem;
 }
 
 .navLink {
+  flex: 0 1 340px;
+  min-width: 0;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1rem;
@@ -100,6 +102,7 @@
 }
 
 .next {
+  margin-left: auto;
   text-align: right;
 }
 
@@ -118,10 +121,15 @@
   }
 
   .nav {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .navLink {
+    flex-basis: auto;
   }
 
   .next {
+    margin-left: 0;
     text-align: left;
   }
 }

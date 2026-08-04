@@ -96,30 +96,28 @@ export default async function PostPage({
               </div>
             )}
 
-            <div className={styles.nav}>
-              {previous ? (
-                <Link
-                  href={`/entradas/${previous.slug}`}
-                  className={styles.navLink}
-                >
-                  <span className={styles.navDirection}>← Entrada anterior</span>
-                  <span className={styles.navTitle}>{previous.title}</span>
-                </Link>
-              ) : (
-                <span />
-              )}
-              {next ? (
-                <Link
-                  href={`/entradas/${next.slug}`}
-                  className={`${styles.navLink} ${styles.next}`}
-                >
-                  <span className={styles.navDirection}>Entrada siguiente →</span>
-                  <span className={styles.navTitle}>{next.title}</span>
-                </Link>
-              ) : (
-                <span />
-              )}
-            </div>
+            {(previous || next) && (
+              <div className={styles.nav}>
+                {previous && (
+                  <Link
+                    href={`/entradas/${previous.slug}`}
+                    className={styles.navLink}
+                  >
+                    <span className={styles.navDirection}>← Entrada anterior</span>
+                    <span className={styles.navTitle}>{previous.title}</span>
+                  </Link>
+                )}
+                {next && (
+                  <Link
+                    href={`/entradas/${next.slug}`}
+                    className={`${styles.navLink} ${styles.next}`}
+                  >
+                    <span className={styles.navDirection}>Entrada siguiente →</span>
+                    <span className={styles.navTitle}>{next.title}</span>
+                  </Link>
+                )}
+              </div>
+            )}
 
             <div className={styles.back}>
               <Link href="/entradas" className="btn btn--secondary">

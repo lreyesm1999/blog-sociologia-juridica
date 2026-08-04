@@ -21,5 +21,5 @@ export const author: Author = {
     "El interés por este tema surge de la necesidad de entender por qué las normas jurídicas existen, a quién protegen y qué ocurre cuando se alejan de la realidad social que buscan regular. La sociología jurídica ofrece las herramientas conceptuales para responder estas preguntas desde una perspectiva crítica y aplicada.",
   authorshipStatement:
     "Los comentarios y reflexiones personales presentados en este blog corresponden al análisis académico realizado por Lenier Reyes Morales a partir de los materiales estudiados durante el curso.",
-  avatar: "/author/lenier-reyes.svg",
+  avatar: "/author/lenier-reyes.png",
 };

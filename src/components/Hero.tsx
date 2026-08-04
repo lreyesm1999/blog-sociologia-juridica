@@ -27,7 +27,7 @@ export default function Hero() {
         <div className={styles.art}>
           <div className={styles.artInner}>
             <Image
-              src="/images/portada-blog.svg"
+              src="/images/portada-blog.png"
               alt="Ilustración de una balanza de justicia junto a una ciudad, representando la relación entre el derecho y la sociedad"
               fill
               sizes="(max-width: 900px) 100vw, 480px"

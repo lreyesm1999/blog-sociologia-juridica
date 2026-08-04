@@ -1,7 +1,13 @@
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+.card:focus-within {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .imageWrap {
@@ -25,14 +31,33 @@
   flex-wrap: wrap;
 }
 
+.tagLink {
+  position: relative;
+  z-index: 2;
+}
+
+.tagLink:hover {
+  background: var(--accent);
+}
+
 .title {
   font-size: 1.15rem;
   color: var(--primary);
   line-height: 1.35;
 }
 
-.title a:hover {
+.titleLink:hover {
   color: var(--secondary);
+}
+
+.titleLink::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.titleLink:focus-visible {
+  outline: none;
 }
 
 .excerpt {

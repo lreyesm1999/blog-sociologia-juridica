@@ -44,12 +44,12 @@ export default async function TagPage({
   const filtered = getPostsByTag(posts, etiqueta);
 
   return (
-    <div className="container" style={{ padding: "2.5rem 20px 4rem" }}>
+    <div className="container page">
       <Breadcrumbs
         items={[{ label: "Etiquetas", href: "/entradas" }, { label: tag }]}
       />
       <h1 className="section-title">Etiqueta: {tag}</h1>
-      <p style={{ color: "var(--text-muted)", marginBottom: "2rem" }}>
+      <p className="page-intro">
         {filtered.length}{" "}
         {filtered.length === 1 ? "entrada encontrada" : "entradas encontradas"}
       </p>

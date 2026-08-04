@@ -15,10 +15,7 @@ export default function AutorPage() {
   const posts = getAllPosts();
 
   return (
-    <div
-      className="container"
-      style={{ padding: "2.5rem 20px 4rem", maxWidth: "820px" }}
-    >
+    <div className="container page page-narrow">
       <Breadcrumbs items={[{ label: "Autor" }]} />
 
       <div className={styles.header}>

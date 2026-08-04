@@ -47,10 +47,10 @@ export default async function ArchivePage({
   );
 
   return (
-    <div className="container" style={{ padding: "2.5rem 20px 4rem" }}>
+    <div className="container page">
       <Breadcrumbs items={[{ label: "Archivo" }, { label }]} />
       <h1 className="section-title">Archivo: {label}</h1>
-      <p style={{ color: "var(--text-muted)", marginBottom: "2rem" }}>
+      <p className="page-intro">
         {filtered.length}{" "}
         {filtered.length === 1 ? "entrada publicada" : "entradas publicadas"}
       </p>

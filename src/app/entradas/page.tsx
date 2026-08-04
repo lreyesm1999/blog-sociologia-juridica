@@ -14,10 +14,10 @@ export default function EntradasPage() {
   const posts = getAllPosts();
 
   return (
-    <div className="container" style={{ padding: "2.5rem 20px 4rem" }}>
+    <div className="container page">
       <Breadcrumbs items={[{ label: "Entradas" }]} />
       <h1 className="section-title">Entradas</h1>
-      <p style={{ color: "var(--text-muted)", marginBottom: "2rem", maxWidth: "70ch" }}>
+      <p className="page-intro">
         Todas las publicaciones del blog Sociedad y Derecho, ordenadas de la
         más reciente a la más antigua.
       </p>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./Footer.module.css";
 
@@ -8,7 +9,16 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <div className={styles.brand}>
-          <p className={styles.title}>Sociedad y Derecho</p>
+          <div className={styles.titleWrap}>
+            <Image
+              src="/images/logo.svg"
+              alt="Logo Sociedad y Derecho"
+              width={32}
+              height={32}
+              className={styles.logoImage}
+            />
+            <p className={styles.title}>Sociedad y Derecho</p>
+          </div>
           <p className={styles.desc}>
             Proyecto final de Sociología Jurídica. Una mirada a la convivencia
             social desde la sociología jurídica.

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Hero from "@/components/Hero";
-import PostList from "@/components/PostList";
+import PostCard from "@/components/PostCard";
 import Sidebar from "@/components/Sidebar";
 import { getFeaturedPosts } from "@/data/posts";
 import styles from "./page.module.css";
@@ -21,7 +21,11 @@ export default function Home() {
                 Ver todas las entradas →
               </Link>
             </div>
-            <PostList posts={featured} />
+            <div className={styles.featuredGrid}>
+              {featured.map((post) => (
+                <PostCard key={post.slug} post={post} />
+              ))}
+            </div>
           </div>
           <Sidebar />
         </div>
